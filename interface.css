@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-top: 30vmin;
+    background-image: linear-gradient(90deg, #548687, #ffffc7);
+}
+.btns {
+    display : flex;
+    margin-top: 4vmin;
+    gap: 4vmin;
+    justify-content: center;
+}
+button{
+    height: 10vmin;
+    width: 14vmin;
+    border-radius: 2vmin;
+     color: black;
+     cursor : pointer;
+     border-color: #548687;
+}
+h1{
+    font-size: 12vmin;
+    opacity: 0; 
+    transform: translateY(50%); 
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+    transition: transform 0.8s ease-in-out;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 4px;
+}
+h3 {
+    font-size : 5vmin;
+    margin-top: 10vmin;
+    color: #284747;
+}
+#comp, #User,h1 {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+#comp:hover, #User:hover,h1:hover {
+    box-shadow: 0px 0px 4px 4px #ffffc7;
+    background-color: #548687;
+    color: #ffffc7;
+}
+#comp:not(:hover), #User:not(:hover), h1:not(:hover) {
+    box-shadow: none; 
+    background-color: initial; 
+    color: initial; 
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        color: #ffffc7;
+    }
+}
+
