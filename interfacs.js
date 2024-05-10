@@ -3,7 +3,7 @@ document.getElementById("User").addEventListener("click", function() {
   clickSound.play();
   
   setTimeout(function() {
-      window.location.href = "index.html";
+      window.location.href = "index2.html";
   }, 1000);  
 });
 
@@ -12,7 +12,7 @@ document.getElementById("User").addEventListener("click", function() {
       clickSound.play();
 
       setTimeout(function() {
-          window.location.href = "index2.html";
+          window.location.href = "index3.html";
       }, 1000);  
   });
   
